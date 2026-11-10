@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headstart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <nav class="nav" aria-label="Main">
+    <div class="brand">Head<span>start</span></div>
+    <button class="navlink on" data-page="opps" type="button">Opportunities</button>
+    <button class="navlink" data-page="whitespace" type="button">White space</button>
+    <button class="navlink" data-page="team" type="button">Team view</button>
+    <div class="navfoot" id="navfoot"></div>
+  </nav>
+
+  <main class="main" id="main"></main>
+
+  <aside class="mimir" id="mimir" aria-label="Mimir assistant">
+    <div class="mhead">
+      <div class="mlogo" aria-hidden="true">M</div>
+      <div><div class="mname">Mimir</div><div class="muted small" id="mctx">Looking at: your opportunities</div></div>
+      <button class="btn quiet mclose" id="mclose" type="button" aria-label="Close Mimir">Close</button>
+    </div>
+    <div class="mlog" id="mlog"></div>
+    <div class="chips" id="chips"></div>
+    <form class="ask" id="askform">
+      <label for="ask" class="small muted">Ask Mimir about this page</label>
+      <div class="askrow"><input id="ask" type="text" autocomplete="off" placeholder="e.g. Which one should I start with?"><button class="btn primary" type="submit">Send</button></div>
+    </form>
+  </aside>
+</div>
+<button class="mfab" id="mfab" type="button">Ask Mimir</button>
+<script src="/static/app.js"></script>
+</body>
+</html>
