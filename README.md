@@ -266,6 +266,7 @@ src/app/api/                  headless API routes
 src/app/page.tsx              CRO view (server component)
 src/components/               heatmap + filters (client components)
 tests/                        vitest unit tests
+legacy/flask-prototype/       earlier Flask/Replit prototype, kept as reference only (not run or maintained)
 ```
 
 ## Roadmap
